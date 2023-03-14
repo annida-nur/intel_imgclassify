@@ -14,7 +14,7 @@ st.caption("""You can classify your pictures into 6 classes (Buildings, Forest, 
 
 upload_file = st.file_uploader("Upload CT Scan image", type = ['png','jpg'], accept_multiple_files=True)
 generate_pred = st.button("predict")
-model = tf.keras.models.load_model("model\model weight\lima_1.h5")
+model = tf.keras.models.load_model("model\lima_1.h5")
 
 def import_n_pred(image_data, model):
     size = (64,64)    
